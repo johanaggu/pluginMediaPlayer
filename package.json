@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Curso de Javascript, creamos un media player para este curso",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "start":"live-serv"
+  },
   "keywords": [],
   "author": "Johan Avila <johan@outlook.com>",
   "dependencies": {
