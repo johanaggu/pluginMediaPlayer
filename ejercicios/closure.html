@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure</title>
+</head>
+
+<body>
+    <script>
+        //Closures
+        //---IIFE Immediately invoked function expression 
+        // var color2 = "red";
+        // (function () {
+        //     let color = 'green'
+        
+        //     function printColor(color) {
+        //         console.log(color);
+        //     }
+        //     printColor(color)
+        // })()
+
+        //function que regresa functions
+        // function makeColorPrinters(color) {
+        //     let colorMessages = `The color is ${color}`
+        //     return function () {
+        //         console.log(colorMessages)
+        //     }
+        // }
+        // let greenColorFunction = makeColorPrinters("red")
+        // console.log(greenColorFunction())
+
+        // variables "Privadas"
+
+        // const counter = {
+        //     count:3
+        // }
+
+        // console.log(counter.count);
+
+
+        function makeCounter (n){
+            let count = n
+            return {
+                increase : function (){return count +=1},
+                decrease : function (){return count -=1},
+                getCount : function (){return count} 
+            }
+        } 
+
+        let counter = makeCounter(10)
+        console.log(counter.decrease());
+    </script>
+</body>
+
+</html>

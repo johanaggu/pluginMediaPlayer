@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope</title>
+</head>
+
+<body>
+    <a href="../ejercicios/">Go back</a>
+    <script>
+        //Global Scope
+        var holla = 'Hola mundo'
+        var $ = function (msg) {
+            console.log('say :' + msg);
+        }
+        //Function scope
+        /* function printNumber() {
+            for (let i = 0; i < 10; i++) {
+                function printEventualy(n) {
+                    setTimeout(function () {
+                        console.log(n);
+                    }, 2000)
+                }
+                printEventualy(i)
+            }
+        }
+        printNumber() */
+
+        //Block scope
+        function printNumber2 (){
+            for(let i = 0; i<10; i++)
+            {
+                setTimeout(
+                    function(){
+                        console.log(i);
+                    }, 1000
+                )
+            } 
+        }
+        printNumber2()
+    </script>
+</body>
+
+</html>
