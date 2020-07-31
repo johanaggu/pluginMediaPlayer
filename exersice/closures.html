@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        /* (
+            function () {
+                let green = "green "
+                console.log(green);
+            }
+            )() */
+
+        /* function makeColor(color) {
+
+            let colorMsg = `The color is ${color}`
+            return function () {
+                console.log(colorMsg);
+            }
+        }
+        let printColor = makeColor("red")
+        console.log(printColor())
+
+ */
+        // Vriables privadas 
+        function makeCounter(n) {
+            let count = n || "No hay numero"
+            return {
+                increase: function (){return count+=1},
+                decrease: function (){return count-=1},
+                getCount: function (){return count },
+                
+            }
+        }
+        let varCounter = makeCounter(2)
+        console.log(varCounter.increase())
+        console.log(varCounter.increase())
+        // console.log(varCounter.getCount())
+        console.log(varCounter.getCount()===4) 
+        
+
+    </script>
+</body>
+
+</html>
