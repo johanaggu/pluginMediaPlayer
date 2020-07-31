@@ -24,6 +24,14 @@ MediaPlyer.prototype._initialPlugins= function(){
     });
 }
 MediaPlyer.prototype.mute= function(){
-  this.media.muted= true    
+    this.media.muted = true    
+}
+MediaPlyer.prototype.unMute= function(){
+    this.media.muted = false
+}
+MediaPlyer.prototype.toggleMute= function(){
+    (this.media.muted)
+    ?this.unMute()
+    :this.mute()
 }
 export default MediaPlyer
