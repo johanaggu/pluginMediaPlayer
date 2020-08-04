@@ -4,11 +4,16 @@
   "description": "Curso de Javascript, creamos un media player para este curso",
   "license": "MIT",
   "scripts": {
-    "start":"live-server"
+    "start": "parcel index.html exersice/**/*.html"
   },
   "keywords": [],
   "author": "Johan Avila <johan@outlook.com>",
-  "dependencies": {
-    "live-server": "^1.2.1"
-  }
+  "dependencies": {},
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "typescript": "^3.9.7"
+  },
+  "browserslist": [
+    "last 1 Chrome version"
+  ]
 }
