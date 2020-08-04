@@ -18,11 +18,22 @@ MediaPlyer.prototype.togglePlay = function () {
     :this.pause()
 };
 MediaPlyer.prototype._initialPlugins= function(){
+    const player={
+        play:()=>this.play(),
+        pause: ()=>this.pause(),
+        media:this.media,
+        get muted(){
+            return this.media.muted 
+        },
+        set muted(value){
+                this.media.muted=value
+        }
+    }
+
     this.plugins.forEach(plugin => {
-        plugin.run(this)
-        console.log(this.play);
+        plugin.run(player)
     });
-}
+} 
 MediaPlyer.prototype.mute= function(){
     this.media.muted = true    
 }
