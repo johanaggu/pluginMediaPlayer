@@ -1,9 +1,11 @@
 class MediaPlyer {
+    media:HTMLMediaElement;
+    plugins: Array <any>;
     constructor(config) {
         this.media = config.el
         this.plugins = config.plugins || []
 
-        this._initialPlugins()
+        this.initialPlugins()
     }
     play() {
         this.media.play()
@@ -16,21 +18,21 @@ class MediaPlyer {
             ? this.play()
             : this.pause()
     }
-    _initialPlugins() {
-        const player = {
-            play: () => this.play(),
-            pause: () => this.pause(),
-            media: this.media,
-            get muted() {
-                return this.media.muted
-            },
-            set muted(value) {
-                this.media.muted = value
-            }
-        }
+    private initialPlugins() {
+        // const player = {
+        //     play: () => this.play(),
+        //     pause: () => this.pause(),
+        //     media: this.media,
+        //     get muted() {
+        //         return this.media.muted
+        //     },
+        //     set muted(value) {
+        //         this.media.muted = value
+        //     }
+        // }
 
         this.plugins.forEach(plugin => {
-            plugin.run(player)
+            plugin.run(this)
         })
     }
     mute() {

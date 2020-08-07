@@ -4,8 +4,8 @@ import AutoPause from './plugins/AutoPause'
 
 
 const video = document.getElementById("video")
-const button = document.getElementById("playButton")
-const unmuteButton = document.getElementById("unMuted")
+const button: HTMLElement = document.getElementById("playButton")
+const unmuteButton: HTMLElement = document.getElementById("unMuted")
 
 const player = new MediaPlyer({
     el: video,
