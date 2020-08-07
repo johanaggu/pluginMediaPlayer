@@ -1,6 +1,6 @@
-import MediaPlyer from './MediaPlayer'
-import AutoPlay from './plugins/AutoPlay'
-import AutoPause from './plugins/AutoPause'
+import MediaPlyer from './MediaPlayer.js'
+import AutoPlay from './plugins/AutoPlay.js'
+import AutoPause from './plugins/AutoPause.js'
 
 
 const video = document.getElementById("video")
