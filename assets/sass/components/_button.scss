@@ -1,0 +1,34 @@
+button{
+    background: none;
+    color: inherit;
+    border: none;
+    padding: .2em 1em;
+    outline: inherit;
+    
+    span{
+        font-size: 2rem !important;
+        color:  $font_color1;
+        
+    }
+}
+
+
+
+@media /* (min-width:400px) and  */( max-width: 907px) {
+    button{
+        background: none;
+        color: inherit;
+        border: none;
+        padding: .2em 1em;
+        outline: inherit;
+        
+        span{
+            font-size: 9rem !important;
+            color:  $font_color1;
+            
+        }
+    }
+    
+   
+
+}

@@ -1,0 +1,19 @@
+.comentarios_container {
+    // border: .2em solid red;
+    border-radius: $radius_standar;
+    width: 70%;
+
+    hr {
+        background-color: red;
+        margin: 0;
+        
+    }
+}
+
+.commentario {
+    list-style: none !important;
+    margin: 0em;
+    padding: 0em;
+    display: inline;
+
+}

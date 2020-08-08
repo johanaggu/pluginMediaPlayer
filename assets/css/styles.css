@@ -1,0 +1,103 @@
+main {
+  margin-top: 15em;
+  background-color: #000;
+}
+
+button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0.2em 1em;
+  outline: inherit;
+}
+button span {
+  font-size: 2rem !important;
+  color: #FFFFFF;
+}
+
+@media (max-width: 907px) {
+  button {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0.2em 1em;
+    outline: inherit;
+  }
+  button span {
+    font-size: 9rem !important;
+    color: #FFFFFF;
+  }
+}
+header {
+  background-color: #000;
+  height: 6em;
+  display: flex;
+  align-items: center;
+  padding: 0.3em 3em;
+}
+header span {
+  margin-right: 0.5em;
+  color: #FFFFFF !important;
+  font-size: 4rem !important;
+}
+header p {
+  font-size: 1.5rem;
+  color: #FFFFFF;
+}
+
+@media (max-width: 907px) {
+  header {
+    height: 3em;
+    padding: 0.3em 1em;
+  }
+  header span {
+    margin-right: 0.5em;
+    color: #FFFFFF !important;
+    font-size: 2rem !important;
+  }
+  header p {
+    font-size: 1rem;
+    color: #FFFFFF;
+  }
+}
+main {
+  margin-top: 3em !important;
+}
+main .fullscreen_div {
+  display: inline-block;
+  width: 85%;
+  right: 0;
+  text-align: right !important;
+}
+main .fullscreen_div button {
+  position: relative;
+}
+main div {
+  background-color: red;
+}
+
+@media (max-width: 450px) {
+  main .fullscreen_div {
+    width: 60%;
+  }
+}
+@media (min-width: 400px) and (max-width: 907px) {
+  main .fullscreen_div {
+    width: 70%;
+  }
+}
+.comentarios_container {
+  border-radius: 1em;
+  width: 70%;
+}
+.comentarios_container hr {
+  background-color: red;
+  margin: 0;
+}
+
+.commentario {
+  list-style: none !important;
+  margin: 0em;
+  padding: 0em;
+  display: inline;
+}

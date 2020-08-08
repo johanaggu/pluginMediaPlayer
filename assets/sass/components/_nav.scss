@@ -1,0 +1,36 @@
+header {
+    background-color: $color1;
+    height: 6em;
+    
+    display: flex;
+    align-items: center;
+    padding: .3em 3em;
+    span{
+        margin-right: .5em;
+        color: $font_color1 !important;
+        font-size: 4rem !important;
+    }
+    p{
+        font-size: 1.5rem;
+        color: $font_color1;
+    }
+}
+
+
+
+@media (max-width: 907px) {
+    header {
+        height: 3em;
+        padding: .3em 1em;
+        span{
+            margin-right: .5em;
+            color: $font_color1 !important;
+            font-size: 2rem !important;
+        }
+        p{
+            font-size: 1rem;
+            color: $font_color1;
+        }
+    }
+        
+}

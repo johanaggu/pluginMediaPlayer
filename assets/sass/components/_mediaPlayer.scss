@@ -1,0 +1,47 @@
+main {
+    margin-top: 3em !important;
+
+    .fullscreen_div {
+        // border: green solid 2px;
+        display: inline-block;
+        width: 85%;
+        right: 0;
+        text-align: right !important;
+
+        button {
+            // border: green solid 1px;
+            position: relative;
+
+        }
+    }
+
+    div {
+        background-color: red;
+
+    }
+}
+
+
+@media (max-width: 450px) {
+
+    main {
+
+        .fullscreen_div {
+            width: 60%;
+
+        }
+    }
+
+}
+
+@media (min-width:400px) and ( max-width: 907px) {
+
+    main {
+
+        .fullscreen_div {
+            width: 70%;
+
+        }
+    }
+
+}
