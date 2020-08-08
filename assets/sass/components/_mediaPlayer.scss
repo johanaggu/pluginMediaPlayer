@@ -2,7 +2,6 @@ main {
     margin-top: 3em !important;
 
     .fullscreen_div {
-        // border: green solid 2px;
         display: inline-block;
         width: 85%;
         right: 0;
@@ -16,11 +15,13 @@ main {
     }
 
     div {
-        background-color: red;
+        background-color: $color1;
 
     }
 }
-
+.container{
+    margin-left: 3em;
+}
 
 @media (max-width: 450px) {
 
@@ -32,6 +33,10 @@ main {
         }
     }
 
+    
+.container{
+    margin-left: 0em;
+}
 }
 
 @media (min-width:400px) and ( max-width: 907px) {
@@ -44,4 +49,7 @@ main {
         }
     }
 
+    .container{
+        margin-left: 0em;
+    }
 }

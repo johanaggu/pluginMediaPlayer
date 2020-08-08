@@ -1,8 +1,29 @@
-main {
-  margin-top: 15em;
+body {
   background-color: #000;
+  width: auto;
 }
 
+main {
+  margin-top: 15em;
+  background-color: #9DFF00;
+}
+
+.fix {
+  width: 25%;
+  position: fixed;
+  right: 4em;
+  top: 7em;
+}
+.fix img {
+  padding-top: 0.5em;
+  width: 100%;
+}
+
+@media (max-width: 907px) {
+  .fix {
+    display: none;
+  }
+}
 button {
   background: none;
   color: inherit;
@@ -12,7 +33,7 @@ button {
 }
 button span {
   font-size: 2rem !important;
-  color: #FFFFFF;
+  color: #000;
 }
 
 @media (max-width: 907px) {
@@ -24,12 +45,12 @@ button span {
     outline: inherit;
   }
   button span {
-    font-size: 9rem !important;
-    color: #FFFFFF;
+    font-size: 1.5rem !important;
+    color: #000;
   }
 }
 header {
-  background-color: #000;
+  background-color: #9DFF00;
   height: 6em;
   display: flex;
   align-items: center;
@@ -37,12 +58,12 @@ header {
 }
 header span {
   margin-right: 0.5em;
-  color: #FFFFFF !important;
+  color: #000 !important;
   font-size: 4rem !important;
 }
 header p {
   font-size: 1.5rem;
-  color: #FFFFFF;
+  color: #000;
 }
 
 @media (max-width: 907px) {
@@ -52,12 +73,12 @@ header p {
   }
   header span {
     margin-right: 0.5em;
-    color: #FFFFFF !important;
+    color: #000 !important;
     font-size: 2rem !important;
   }
   header p {
     font-size: 1rem;
-    color: #FFFFFF;
+    color: #000;
   }
 }
 main {
@@ -73,31 +94,83 @@ main .fullscreen_div button {
   position: relative;
 }
 main div {
-  background-color: red;
+  background-color: #9DFF00;
+}
+
+.container {
+  margin-left: 3em;
 }
 
 @media (max-width: 450px) {
   main .fullscreen_div {
     width: 60%;
   }
+
+  .container {
+    margin-left: 0em;
+  }
 }
 @media (min-width: 400px) and (max-width: 907px) {
   main .fullscreen_div {
     width: 70%;
   }
+
+  .container {
+    margin-left: 0em;
+  }
 }
 .comentarios_container {
   border-radius: 1em;
   width: 70%;
+  padding: 5em;
+  margin: 0;
 }
 .comentarios_container hr {
-  background-color: red;
   margin: 0;
 }
 
-.commentario {
+.comentario_container {
+  display: flex;
+  margin-top: 1em;
+}
+.comentario_container span {
+  height: 100%;
+  text-align: center;
+  color: #9DFF00 !important;
+  width: 5em;
+}
+.comentario_container .commentario {
+  height: 100%;
   list-style: none !important;
   margin: 0em;
   padding: 0em;
   display: inline;
+  font-size: 1rem;
+  color: #ffffff !important;
+}
+
+@media (max-width: 907px) {
+  .comentarios_container {
+    width: 100%;
+    padding: 0.3em;
+  }
+  .comentarios_container hr {
+    margin: 0;
+  }
+
+  .comentario_container {
+    display: flex;
+  }
+  .comentario_container span {
+    height: 100%;
+    text-align: center;
+    width: 5em;
+  }
+  .comentario_container .commentario {
+    height: 100%;
+    list-style: none !important;
+    margin: 0em;
+    padding: 0em;
+    display: inline;
+  }
 }
