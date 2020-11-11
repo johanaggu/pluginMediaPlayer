@@ -2,13 +2,11 @@ class MediaPlyer {
     constructor(config) {
         this.media = config.el
         this.plugins = config.plugins || []
-
         this._initialPlugins()
     }
     play() {
         this.media.play()
         document.getElementById("playButton_span").innerText="pause_circle_filled"
-
         // document.getElementById("mutedButton_span").innerText="pause_circle_filled"
 
     }
