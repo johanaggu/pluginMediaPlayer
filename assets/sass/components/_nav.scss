@@ -1,36 +1,16 @@
-header {
-    background-color: $color1;
-    height: 6em;
-    
+nav{
+    background-color: $color_one;
+    color: $color_three;
     display: flex;
     align-items: center;
-    padding: .3em 3em;
+    height: 3em;
+    // font-size: 2em];
+    
     span{
-        margin-right: .5em;
-        color: $font_color1 !important;
-        font-size: 4rem !important;
+        font-size: 2rem !important;
+        margin:0em .5em;
     }
     p{
-        font-size: 1.5rem;
-        color: $font_color1;
+        font-size: 1.5rem !important;
     }
-}
-
-
-
-@media (max-width: 907px) {
-    header {
-        height: 3em;
-        padding: .3em 1em;
-        span{
-            margin-right: .5em;
-            color: $font_color1 !important;
-            font-size: 2rem !important;
-        }
-        p{
-            font-size: 1rem;
-            color: $font_color1;
-        }
-    }
-        
 }

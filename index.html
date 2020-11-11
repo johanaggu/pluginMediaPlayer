@@ -1,4 +1,4 @@
-<html lang="en">
+<html lang="es">
 
 <head>
   <!-- https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement -->
@@ -11,46 +11,49 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/index.css" />
   <link rel="stylesheet" href="./assets/css/styles.css">
-
+  
 </head>
 
 <body>
-  <header>
+  <nav>
     <span class="material-icons">
       music_video
     </span>
-    <p>PlatziVideo.js</p>
-
-  </header>
-
-  <main class="container">  
-    <video id="video" class="movie">
-      <source src="https://res.cloudinary.com/dufryyw5r/video/upload/v1599364750/db_movies/video/Fight_Club_-_Theatrical_Trailer_Remastered_in_HD_kiykxq.mp4">
-    </video>
-    <div>
-      <button id="playButton">
-        <span id="playButton_span" class="material-icons">
-
-        </span>
-      </button>
-      <button id="unMuted">
-        <span id="mutedButton_span" class="material-icons">
-          volume_off
-        </span>
-      </button>
-      <div class="fullscreen_div">
-        <button id="fullscreen">
-          <span class="material-icons">
-            fullscreen
-          </span>
+    <p>Video.js</p>
+  </nav>
+  
+  <main >
+    <!-- Reproductor -->
+    <div class="reproductor">
+      <video id="video" class="reproductor-video" src="https://res.cloudinary.com/dufryyw5r/video/upload/v1599364750/db_movies/video/Fight_Club_-_Theatrical_Trailer_Remastered_in_HD_kiykxq.mp4">
+      </video>
+      <div class="reproductor-controls">
+        <button class="playButton" id="playButton">
+          <span id="playButton_span" class="material-icons"></span>
         </button>
+        <button class="unMuted" id="unMuted">
+          <span id="mutedButton_span" class="material-icons">volume_off</span>
+        </button>
+        <div class="fullscreen_div">
+          <button id="fullscreen">
+            <span class="material-icons">fullscreen</span>
+          </button>
+        </div>
       </div>
+    </div>  
+    <!-- Otros videos -->
+    <div class="otrosVideos">
+    </div>
+    <!-- Comments -->
+    <div id="comments" class="comments">
     </div>
   </main>
   
   
-
+  
+  
   <script type="module" src="./assets/js/index.js"></script>
+  <link rel="stylesheet" href="./assets/css/styles.css">
 
 </body>
 

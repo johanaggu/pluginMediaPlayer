@@ -1,26 +1,13 @@
-body {
-    background-color: $font_color1;
-    width: auto;
+*{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
 }
-
-main {
-    margin-top: 15em;
-    background-color: $color1;
+body{
+    background-color: $color_one;
 }
-
-.fix {
-    width: 25%;
-    position: fixed;
-    right: 4em;
-    top: 7em;
-    // border: green 20px solid;
-    img{padding-top:.5em ;
-        width: 100%;
-    }
-}
-
-@media ( max-width: 907px) {
-.fix{
-    display: none;
-}
+main{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(20, 3em);    
 }

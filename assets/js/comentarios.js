@@ -1,16 +1,18 @@
-//--------comentarios /*ESto tendria que ser consumido por algun api
-export default function Comentarios() {
-    let comentarios_container = document.getElementById("comentarios_container")
-    let comentario = `
-    <div class="comentario_container" >    
-        <span class="material-icons">person</span>
-        <li class="commentario" >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat cumque debitis eveniet fuga nostrum pariatur
-            numquam rerum blanditiis, natus velit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat cumque debitis eveniet fuga nostrum pariatur
-            numquam rerum blanditiis, natus velit.
-         </li>
+
+let Comentarios =(data) =>{
+
+    let comment = `
+    <div class="comment">
+        <div class="comment-left">
+            <img class="comment-left_img" src="${data.img}" />
+            <div class="comment-left_name">${data.first_name}</div>
+        </div>
+        <div class="comment-right">
+          ${data.comment}
+        </div>
     </div>
-    <hr>
     `
-    comentarios_container.innerHTML = comentario.repeat(20)
+    return comment
 }
+
+export default Comentarios

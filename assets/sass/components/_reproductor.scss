@@ -1,0 +1,42 @@
+.reproductor{
+    grid-column: 1/21;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;  
+    // border: solid 3px red;
+    background-color: $color_two;
+}
+
+.reproductor-video{
+    width: 100%;
+    // border: solid 3px greenyellow;
+}
+
+.reproductor-controls{
+    // border: solid 3px magenta ;
+    height: 2.5em;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(20, 1fr) ;    
+    button {
+        background:$color_one;
+        margin:.2em;
+        border:none;
+        color: $color_three;
+        line-height: normal;
+        overflow: visible;
+        padding: 0;
+
+    }
+    .playButton {
+        grid-column: 1/2;
+    }
+    .unMuted {
+        grid-column: 2/3;
+    }
+    .fullscreen_div {
+        display: flex;
+        align-items: center;
+        grid-column: 20/21;
+    }
+}
